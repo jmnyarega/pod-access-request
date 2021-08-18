@@ -1,6 +1,8 @@
 .form {
     font-size: 0.875rem;
     font-weight: bold;
+    margin-top: 2.5rem;
+    padding-bottom: 5rem;
     .input, .button {
         width: 100%;
         padding: 0.9375em 1.5em;
@@ -9,6 +11,6 @@
     }
 
     .input {
-        margin-bottom: 1rem;
+        margin-bottom: 0.875rem;
     }
 }

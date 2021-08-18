@@ -1,6 +1,7 @@
 @use 'abstract';
 
 .hero {
+    margin-top: 3.8125rem;
     &__title {
         color: abstract.$light-green;
         font-weight: lighter;
@@ -16,5 +17,6 @@
         font-size: 0.9375rem;
         max-width: 35ch;
         margin-inline: auto;
+        margin-top: 1.8125rem;
     }
 }
