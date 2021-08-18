@@ -1,10 +1,29 @@
-/*
- * Global styles
- *
- */
-
 @use 'abstract';
 
 body {
-    background-color: abstract.$light-blue;
+    font-family: abstract.$ff-default;
+    background-color: abstract.$very-dark-blue;
+    color: abstract.$very-light-blue;
+
+    text-align: center;
+
+    &::after {
+        content: "";
+        background: no-repeat url(../assets/mobile/image-host.jpg);
+        background-color: abstract.$light-blue;
+        background-blend-mode: multiply;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.container {
+    max-width: 90em;
+    width: 90%;
+    margin-inline: auto;
 }

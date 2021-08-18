@@ -1,5 +1,11 @@
 @use 'abstract';
 
 .button {
-    color: abstract.$black;
+    outline: none;
+    border: 1px solid transparent;
+    display: block;
+
+    background-color: abstract.$light-green;
+    color: abstract.$very-dark-blue;
+    cursor: pointer;
 }

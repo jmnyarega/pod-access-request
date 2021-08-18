@@ -1,0 +1,20 @@
+@use 'abstract';
+
+.hero {
+    &__title {
+        color: abstract.$light-green;
+        font-weight: lighter;
+        font-size: 1.625rem;
+        text-transform: uppercase;
+
+        span {
+            color: abstract.$white;
+        }
+    }
+
+    &__text {
+        font-size: 0.9375rem;
+        max-width: 35ch;
+        margin-inline: auto;
+    }
+}

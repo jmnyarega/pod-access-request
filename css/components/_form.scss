@@ -1,0 +1,14 @@
+.form {
+    font-size: 0.875rem;
+    font-weight: bold;
+    .input, .button {
+        width: 100%;
+        padding: 0.9375em 1.5em;
+        border-radius: 99em;
+        font: inherit;
+    }
+
+    .input {
+        margin-bottom: 1rem;
+    }
+}
