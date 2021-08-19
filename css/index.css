@@ -3,7 +3,7 @@ body {
   color: #c2cbe5;
   background-color: #121726;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -24,18 +24,24 @@ body::before {
     background-image: url(../assets/tablet/image-host.jpg);
     background-blend-mode: initial;
     left: 30%;
-    bottom: 26vh;
+    bottom: 15vh;
   }
 }
-@media (min-width: 45rem) {
+body::after {
+  content: "";
+  background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
+  position: fixed;
+  bottom: 0;
+  left: 2.5rem;
+  min-height: 6.5rem;
+  min-width: 10rem;
+}
+@media (min-width: 60rem) {
   body::after {
-    content: "";
-    background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
-    min-height: 6.5rem;
-    min-width: 14.5rem;
     position: fixed;
-    bottom: 0;
-    left: 5%;
+    bottom: 5rem;
+    left: unset;
+    right: 0;
   }
 }
 @media (min-width: 45rem) {
@@ -48,6 +54,18 @@ body::before {
   max-width: 90em;
   width: 90%;
   margin-inline: auto;
+}
+@media (min-width: 45rem) {
+  .container {
+    max-width: max-content;
+    margin-inline: initial;
+    padding-left: 2.5rem;
+  }
+}
+@media (min-width: 60rem) {
+  .container {
+    padding-left: 10.3125rem;
+  }
 }
 
 /*----------------------------
@@ -218,12 +236,12 @@ img:not([alt]) {
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
+  margin: 0;
   margin-inline: auto;
   padding: 2.375rem 0 0 0;
 }
 @media (min-width: 45rem) {
   .platforms ul {
-    margin: 0;
     justify-content: start;
     background-color: #121726;
   }
@@ -289,6 +307,7 @@ img:not([alt]) {
 @media (min-width: 45rem) {
   .form {
     background-color: #121726;
+    padding-bottom: 10rem;
   }
 }
 .form:hover {

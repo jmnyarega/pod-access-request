@@ -5,7 +5,7 @@ body {
     color: abstract.$very-light-blue;
     background-color: abstract.$very-dark-blue;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
 
     &::before {
         content: "";
@@ -25,19 +25,23 @@ body {
             background-image: url(../assets/tablet/image-host.jpg);
             background-blend-mode: initial;
             left: 30%;
-            bottom: 26vh;
+            bottom: 15vh;
         }
     }
 
-    @media (min-width: 45rem) {
-        &::after {
-            content: "";
-            background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
-            min-height: 6.5rem;
-            min-width: 14.5rem;
+    &::after {
+        content: "";
+        background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
+        position: fixed;
+        bottom: 0;
+        left: 2.5rem;
+        min-height: 6.5rem;
+        min-width: 10rem;
+        @media (min-width: 60rem) {
             position: fixed;
-            bottom: 0;
-            left: 5%;
+            bottom: 5rem;
+            left: unset;
+            right: 0;
         }
     }
 
@@ -50,4 +54,12 @@ body {
     max-width: 90em;
     width: 90%;
     margin-inline: auto;
+    @media (min-width: 45rem) {
+        max-width: max-content;
+        margin-inline: initial;
+        padding-left: 2.5rem;
+    }
+    @media (min-width: 60rem) {
+        padding-left: 10.3125rem;
+    }
 }
