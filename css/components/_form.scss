@@ -1,16 +1,44 @@
+@use 'abstract';
+
 .form {
     font-size: 0.875rem;
     font-weight: bold;
-    margin-top: 2.5rem;
-    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+
+    form {
+        position: relative;
+        max-width: 30rem;
+        margin-inline: auto;
+        @media (min-width: 45rem) {
+            margin-inline: initial;
+        }
+    }
+
     .input, .button {
         width: 100%;
         padding: 0.9375em 1.5em;
         border-radius: 99em;
         font: inherit;
     }
-
     .input {
         margin-bottom: 0.875rem;
+        @media (min-width: 45rem) {
+            margin-bottom: 0;
+        }
+    }
+    .button {
+        @media (min-width: 45rem) {
+            position: absolute;
+            top: 0;
+            right: -1rem;
+            max-width: 15rem;
+            transform: scale(0.8);
+        }
+    }
+    @media (min-width: 45rem) {
+        background-color: abstract.$very-dark-blue;
+    }
+    &:hover {
+        outline: 1px solid red;
     }
 }

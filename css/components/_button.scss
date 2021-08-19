@@ -8,4 +8,12 @@
     background-color: abstract.$light-green;
     color: abstract.$very-dark-blue;
     cursor: pointer;
+
+    transition: all 350ms linear;
+
+    &:hover, &:focus {
+        color: abstract.$light-green;
+        background-color: transparent;
+        border: 1px solid abstract.$light-green;
+    }
 }

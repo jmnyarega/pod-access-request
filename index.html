@@ -16,8 +16,8 @@
     <header class="header container">
       <img src="./assets/desktop/logo.svg" alt="Pod request landing page" />
     </header>
-    <main>
-      <div class="hero container">
+    <main class="container">
+      <div class="hero">
         <h1 class="hero__title">
           Publish your podcasts <span>everywhere. </span>
         </h1>
@@ -27,24 +27,36 @@
           and more!
         </p>
       </div>
-      <ul class="platforms container">
-        <li>
-          <img src="./assets/desktop/spotify.svg" alt="" />
-        </li>
-        <li>
-          <img src="./assets/desktop/apple-podcast.svg" alt="" />
-        </li>
-        <li>
-          <img src="./assets/desktop/google-podcasts.svg" alt="" />
-        </li>
-        <li>
-          <img src="./assets/desktop/pocket-casts.svg" alt="" />
-        </li>
-      </ul>
-      <form class="form container" novalidate action="#0">
-        <input type="email" name="" class="input" placeholder="Email address" />
-        <button type="submit" class="button">Request Access</button>
-      </form>
+      <div class="platforms">
+        <ul>
+          <li>
+            <img src="./assets/desktop/spotify.svg" alt="Spotify podcast" />
+          </li>
+          <li>
+            <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast" />
+          </li>
+          <li>
+            <img
+              src="./assets/desktop/google-podcasts.svg"
+              alt="Google podcast"
+            />
+          </li>
+          <li>
+            <img src="./assets/desktop/pocket-casts.svg" alt="Pocket podcast" />
+          </li>
+        </ul>
+      </div>
+      <div class="form">
+        <form novalidate action="#0">
+          <input
+            type="email"
+            name=""
+            class="input"
+            placeholder="Email address"
+          />
+          <button type="submit" class="button">Request Access</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>

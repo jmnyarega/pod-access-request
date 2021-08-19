@@ -3,5 +3,15 @@
     img {
         width: max-content;
         margin-inline: auto;
+        @media (min-width: 45rem) {
+            margin-inline: initial;
+            width: initial;
+        }
+    }
+    &:hover {
+        outline: 1px solid red;
+    }
+    @media (min-width: 45rem) {
+        padding-bottom: 9.5rem;
     }
 }

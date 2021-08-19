@@ -1,12 +1,18 @@
 @use 'abstract';
 
 .hero {
-    margin-top: 3.8125rem;
+    padding-top: 3.8125rem;
     &__title {
         color: abstract.$light-green;
         font-weight: lighter;
         font-size: 1.625rem;
         text-transform: uppercase;
+        max-width: 30ch;
+        margin-inline: auto;
+        @media (min-width: 45rem) {
+            font-size: 3rem;
+            margin-inline: initial;
+        }
 
         span {
             color: abstract.$white;
@@ -18,5 +24,18 @@
         max-width: 35ch;
         margin-inline: auto;
         margin-top: 1.8125rem;
+        @media (min-width: 45rem) {
+            margin-inline: initial;
+            max-width: 40ch;
+            font-size: 1.125rem;
+        }
+    }
+
+    @media (min-width: 45rem) {
+        background-color: abstract.$very-dark-blue;
+    }
+
+    &:hover {
+        outline: 1px solid red;
     }
 }
