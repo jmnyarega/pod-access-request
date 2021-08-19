@@ -27,14 +27,16 @@ body::before {
     bottom: 15vh;
   }
 }
-body::after {
-  content: "";
-  background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
-  position: fixed;
-  bottom: 0;
-  left: 2.5rem;
-  min-height: 6.5rem;
-  min-width: 10rem;
+@media (min-width: 60rem) {
+  body::after {
+    content: "";
+    background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
+    position: fixed;
+    bottom: 0;
+    left: 2.5rem;
+    min-height: 6.5rem;
+    min-width: 10rem;
+  }
 }
 @media (min-width: 60rem) {
   body::after {

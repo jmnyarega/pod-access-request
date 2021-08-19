@@ -28,15 +28,16 @@ body {
             bottom: 15vh;
         }
     }
-
     &::after {
-        content: "";
-        background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
-        position: fixed;
-        bottom: 0;
-        left: 2.5rem;
-        min-height: 6.5rem;
-        min-width: 10rem;
+        @media (min-width: 60rem) {
+            content: "";
+            background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
+            position: fixed;
+            bottom: 0;
+            left: 2.5rem;
+            min-height: 6.5rem;
+            min-width: 10rem;
+        }
         @media (min-width: 60rem) {
             position: fixed;
             bottom: 5rem;
@@ -44,7 +45,6 @@ body {
             right: 0;
         }
     }
-
     @media (min-width: 45rem) {
         text-align: initial;
     }
