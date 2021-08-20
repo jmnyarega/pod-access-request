@@ -305,7 +305,7 @@ img:not([alt]) {
 }
 @media (min-width: 45rem) {
   .container {
-    max-width: max-content;
+    max-width: 50em;
     margin-inline: initial;
     padding-left: 2.5rem;
   }
