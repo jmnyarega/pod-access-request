@@ -5,7 +5,6 @@ body {
     color: abstract.$very-light-blue;
     background-color: abstract.$very-dark-blue;
     text-align: center;
-    overflow-x: hidden;
 
     &::before {
         content: "";
@@ -24,7 +23,7 @@ body {
         @media (min-width: 45rem) {
             background-image: url(../assets/tablet/image-host.jpg);
             background-blend-mode: initial;
-            left: 38.33%;
+            left: 35%;
             bottom: 15vh;
         }
         @media (min-width: 60rem) {

@@ -36,9 +36,12 @@
 
     &__error {
         font-size: 0.75rem;
+        display: block;
         font-weight: bold;
         color: abstract.$red;
-        padding-left: 2rem;
+        @media (min-width: 45rem) {
+            padding-left: 2rem;
+        }
     }
 
     @media (min-width: 45rem) {
