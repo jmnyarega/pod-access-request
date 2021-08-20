@@ -27,6 +27,12 @@ body::before {
     bottom: 15vh;
   }
 }
+@media (min-width: 60rem) {
+  body::before {
+    background-image: url(../assets/desktop/image-host.jpg);
+    top: 8.125rem;
+  }
+}
 @media (min-width: 45rem) {
   body::after {
     content: "";
@@ -50,24 +56,6 @@ body::before {
 @media (min-width: 45rem) {
   body {
     text-align: initial;
-  }
-}
-
-.container {
-  max-width: 90em;
-  width: 90%;
-  margin-inline: auto;
-}
-@media (min-width: 45rem) {
-  .container {
-    max-width: max-content;
-    margin-inline: initial;
-    padding-left: 2.5rem;
-  }
-}
-@media (min-width: 60rem) {
-  .container {
-    padding-left: 10.3125rem;
   }
 }
 
@@ -248,6 +236,12 @@ img:not([alt]) {
   padding: 0;
   margin: 0;
 }
+@media (min-width: 45rem) {
+  .platforms ul {
+    background-color: #121726;
+    padding-bottom: 10rem;
+  }
+}
 
 .input {
   outline: none;
@@ -301,12 +295,36 @@ img:not([alt]) {
 @media (min-width: 45rem) {
   .form {
     background-color: #121726;
-    padding-bottom: 10rem;
   }
 }
 
-/*
- *
- * Home for sass
- *
- */
+.container {
+  max-width: 90em;
+  width: 90%;
+  margin-inline: auto;
+}
+@media (min-width: 45rem) {
+  .container {
+    max-width: max-content;
+    margin-inline: initial;
+    padding-left: 2.5rem;
+  }
+}
+@media (min-width: 60rem) {
+  .container {
+    padding-left: 10.3125rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 45rem) {
+  main .platforms {
+    order: 3;
+  }
+  main .form {
+    order: 2;
+  }
+}

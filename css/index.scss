@@ -1,9 +1,3 @@
-/*
- *
- * Home for sass
- *
- */
-
 @use 'global';
 @use 'reset';
 @use 'components/button';
@@ -12,3 +6,4 @@
 @use 'components/platforms';
 @use 'components/input';
 @use 'components/form';
+@use 'layout';

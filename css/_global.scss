@@ -27,6 +27,10 @@ body {
             left: 30%;
             bottom: 15vh;
         }
+        @media (min-width: 60rem) {
+            background-image: url(../assets/desktop/image-host.jpg);
+            top: 8.125rem;
+        }
     }
 
     &::after {
@@ -40,7 +44,6 @@ body {
             min-height: 6.5rem;
             min-width: 10rem;
         }
-
         @media (min-width: 60rem) {
             position: fixed;
             bottom: 5rem;
@@ -50,19 +53,5 @@ body {
     }
     @media (min-width: 45rem) {
         text-align: initial;
-    }
-}
-
-.container {
-    max-width: 90em;
-    width: 90%;
-    margin-inline: auto;
-    @media (min-width: 45rem) {
-        max-width: max-content;
-        margin-inline: initial;
-        padding-left: 2.5rem;
-    }
-    @media (min-width: 60rem) {
-        padding-left: 10.3125rem;
     }
 }
