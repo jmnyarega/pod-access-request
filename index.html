@@ -46,17 +46,34 @@
           </li>
         </ul>
       </div>
-      <div class="form">
-        <form novalidate action="#0">
+      <div class="form" onsubmit="return handleSubmit()">
+        <form novalidate action="#0" id="form">
           <input
             type="email"
             name="email"
             class="input"
             placeholder="Email address"
           />
+          <span class="form__error"></span>
           <button type="submit" class="button">Request Access</button>
         </form>
       </div>
     </main>
+    <script>
+      function emailIsValid(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function handleSubmit(evt) {
+        const form = new FormData(document.getElementById("form"));
+        const email = form.get("email");
+
+        if (!email.trim() || !emailIsValid(email)) {
+          document.querySelector("form span").innerText =
+            "Oops! Please check your email";
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>
