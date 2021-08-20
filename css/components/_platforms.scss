@@ -19,9 +19,9 @@
             padding: 0;
             margin: 0;
         }
-    @media (min-width: 45rem) {
-        background-color: abstract.$very-dark-blue;
-        padding-bottom: 10rem;
-    }
+        @media (min-width: 45rem) {
+            background-color: abstract.$very-dark-blue;
+            padding-bottom: 10rem;
+        }
     }
 }

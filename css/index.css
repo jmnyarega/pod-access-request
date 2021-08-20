@@ -39,7 +39,7 @@ body::before {
     background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
     background-size: cover;
     position: absolute;
-    bottom: -1rem;
+    bottom: -4rem;
     left: 2.5rem;
     min-height: 6.5rem;
     min-width: 10rem;
@@ -48,7 +48,7 @@ body::before {
 @media (min-width: 60rem) {
   body::after {
     position: fixed;
-    bottom: 5rem;
+    bottom: 3rem;
     left: unset;
     right: 0;
   }
