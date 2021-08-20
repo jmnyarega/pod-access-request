@@ -173,7 +173,7 @@ img:not([alt]) {
 }
 @media (min-width: 45rem) {
   .header {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
 }
 @media (min-width: 60rem) {
