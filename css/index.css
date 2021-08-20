@@ -23,7 +23,7 @@ body::before {
   body::before {
     background-image: url(../assets/tablet/image-host.jpg);
     background-blend-mode: initial;
-    left: 40%;
+    left: 38.33%;
     bottom: 15vh;
   }
 }
@@ -216,6 +216,12 @@ img:not([alt]) {
 }
 @media (min-width: 45rem) {
   .hero {
+    background-color: #121726;
+  }
+}
+@media (min-width: 45rem) {
+  .hero {
+    padding-top: 5.5rem;
     background-color: #121726;
   }
 }
