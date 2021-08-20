@@ -12,7 +12,7 @@ body::before {
   background-color: inherit;
   opacity: 0.9;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -23,7 +23,7 @@ body::before {
   body::before {
     background-image: url(../assets/tablet/image-host.jpg);
     background-blend-mode: initial;
-    left: 30%;
+    left: 40%;
     bottom: 15vh;
   }
 }
@@ -47,7 +47,6 @@ body::before {
 }
 @media (min-width: 60rem) {
   body::after {
-    position: fixed;
     bottom: 3rem;
     left: unset;
     right: 0;
@@ -173,12 +172,12 @@ img:not([alt]) {
 }
 @media (min-width: 45rem) {
   .header {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   }
 }
 @media (min-width: 60rem) {
   .header {
-    margin-top: 6.375rem;
+    margin-top: 5.375rem;
   }
 }
 

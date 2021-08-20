@@ -14,7 +14,7 @@ body {
         background-color: inherit;
         opacity: 0.9;
         background-size: cover;
-        position: fixed;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
@@ -24,7 +24,7 @@ body {
         @media (min-width: 45rem) {
             background-image: url(../assets/tablet/image-host.jpg);
             background-blend-mode: initial;
-            left: 30%;
+            left: 40%;
             bottom: 15vh;
         }
         @media (min-width: 60rem) {
@@ -45,7 +45,6 @@ body {
             min-width: 10rem;
         }
         @media (min-width: 60rem) {
-            position: fixed;
             bottom: 3rem;
             left: unset;
             right: 0;
