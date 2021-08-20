@@ -28,16 +28,19 @@ body {
             bottom: 15vh;
         }
     }
+
     &::after {
-        @media (min-width: 60rem) {
+        @media (min-width: 45rem) {
             content: "";
             background: no-repeat url(../assets/desktop/bg-pattern-dots.svg);
-            position: fixed;
-            bottom: 0;
+            background-size: cover;
+            position: absolute;
+            bottom: -1rem;
             left: 2.5rem;
             min-height: 6.5rem;
             min-width: 10rem;
         }
+
         @media (min-width: 60rem) {
             position: fixed;
             bottom: 5rem;
